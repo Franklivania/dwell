@@ -1,0 +1,32 @@
+@import '../App.scss';
+
+.navbar{
+    width: $width;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+
+    .link{
+        padding: 0 0.3rem;
+        text-decoration: none;
+        color: $primary-color;
+
+        &:hover{
+            color: $main-color;
+        }
+    }
+
+    .social{
+        
+        a{
+            padding: 0 0.3rem;
+            text-decoration: none;
+            color: $primary-color;
+
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+}

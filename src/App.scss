@@ -1,0 +1,23 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+$primary-color: #ffffff;
+$main-color: #DD8F0C;
+$text-color: #222222;
+$accent-color: #8B4513;
+$width: 100%;
+$height: 100vh;
+$box-height: 20.2rem;
+$box-width: 20.2rem;
+$button-height: 2.4rem;
+$button-width: 4.3rem;
+$fontfamily: 'Montserrat', sans-serif;
