@@ -1,0 +1,59 @@
+@import '../App.scss';
+
+main{
+    font-family: $font-family;
+    background: 
+        radial-gradient(
+            circle,
+            rgba(($text-color), 0.4),
+            rgba(($text-color), 0.2),
+        ),
+    url(../assets/hero.jpg) no-repeat center;
+    background-size: cover;
+    width: $width;
+    height: $height;
+    position: relative;
+    font-size: $text-size;
+    color: $primary-color;
+
+    .text{
+        width: calc(($width) * 0.4);
+        margin: 5rem;
+
+        h1{
+            font-size: $extra-large-text;
+            font-weight: 600;
+        }
+
+        p{
+            font-size: $text-size;
+            padding: 2rem 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: $primary-color;
+            background: $main-color;
+            padding: 0.5rem 0.9rem;
+            border-radius: $small-border-radius;
+        }
+    }
+
+    .box, .circle{
+        background: $main-color;
+        height: $small-box-height;
+        width: $small-box-width;
+        position: absolute;
+    }
+
+    .box{
+        top: calc(($height) * 0.2);
+        left: calc(($width) * 0.46);
+    }
+    .circle{
+        top: calc(($height) * 0.87);
+        left: calc(($width) * 0.06);
+        border-radius: $radius;
+    }
+
+}

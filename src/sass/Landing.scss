@@ -1,0 +1,9 @@
+@import '../App.scss';
+
+.landing{
+    height: $height;
+    width: $width;
+    position: relative;
+    background: $primary-color;
+    z-index: 11;
+}

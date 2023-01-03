@@ -1,11 +1,13 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
 import '../sass/Landing.scss'
 
 const Landing = () => {
   return (
-    <div>
-        <Navbar/>
+    <div className='landing'>
+
+        <Hero/>
+
     </div>
   )
 }

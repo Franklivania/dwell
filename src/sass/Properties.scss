@@ -1,0 +1,58 @@
+@import '../App.scss';
+
+.container{
+    width: calc(($width) * 0.8);
+    background: $primary-color;
+    height: calc(($height) * 0.2);
+    color: $text-color;
+    position: absolute;
+    top: calc(($height) * 0.94);
+    left: calc(($width) * 0.1);
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0.03rem 0.3rem 0.5rem rgba(($text-color), 0.8),
+                -0.03rem -0.3rem 0.5rem rgba(($text-color), 0.8);
+
+    .content{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: calc(($width) * 1);
+        height: calc(($height) * 0.2);
+        background: $primary-color;
+        border-radius: $border-radius;
+        padding: 1rem;
+    }
+
+    .btn{
+        position: absolute;
+        top: calc(($height) * -0.04);
+        left: calc(($width) * 0.4);
+        display: flex;
+        justify-content: space-between;
+        width: calc(($width) * 0.2);
+        z-index: 1;
+
+        button{
+            height: $button-height;
+            width: $button-width;
+            background: $primary-color;
+            color: $text-color;
+            outline: none;
+            border: none;
+            border-radius: $small-border-radius;
+
+            &.active{
+                color: $main-color;
+                border: $main-color solid 0.05rem;
+            }
+
+            &:hover{
+                color: $main-color;
+                border: $main-color solid 0.05rem;
+            }
+        }
+    }
+}
