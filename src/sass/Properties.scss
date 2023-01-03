@@ -24,6 +24,46 @@
         background: $primary-color;
         border-radius: $border-radius;
         padding: 1rem;
+        display: flex;
+        color: $text-color;
+
+        .place{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(($width) * 1);
+            height: calc(($height) * 0.2);
+            border-radius: $border-radius;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 1.3rem 0 0 0;
+            
+            .card{
+
+                div{
+                    cursor: pointer;
+                    padding: 0.3rem;
+                    height: $small-box-height;
+                    width: $box-width;
+                    background: $primary-color;
+                    padding: 0.4rem;
+                }
+
+                button{
+                    padding: 0.4rem 0;
+                    background: none;
+                    font-size: $text-size;
+                    color: $main-color;
+                    border: none;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                }
+
+            }
+
+        }
     }
 
     .btn{
@@ -55,4 +95,11 @@
             }
         }
     }
+}
+
+.list{
+    background: $primary-color;
+    padding: 1rem;
+    color: $text-color;
+    top: calc(($height) * 0.12);
 }
