@@ -1,4 +1,5 @@
 import React from 'react'
+import Brand from '../components/Brand'
 import Companies from '../components/Companies'
 import Hero from '../components/Hero'
 import Howto from '../components/Howto'
@@ -13,6 +14,8 @@ const Landing = () => {
         <Companies/>
 
         <Howto/>
+
+        <Brand/>
 
     </div>
   )

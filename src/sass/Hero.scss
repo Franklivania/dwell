@@ -19,6 +19,7 @@ main{
 
     .text{
         width: calc(($width) * 0.4);
+        height: calc(($height) * 0.5);
         margin: 5rem;
 
         h1{

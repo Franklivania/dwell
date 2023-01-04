@@ -2,12 +2,127 @@
 
 .howto{
     position: relative;
+    margin: 5rem 0;
+    padding: 2rem;
+    font-family: $font-family;
+    width: $width;
+
+    .circle{
+        height: $small-box-height;
+        width: $small-box-width;
+        border-radius: $radius;
+        background: $main-color;
+        position: absolute;
+        top: 0;
+        left: calc(($width) * 0.22);
+    }
+
+        h2{
+            font-size: $large-text;
+            padding: 1rem 0;
+            color: $main-color;
+        }
+        p{
+            font-size: $text-size;
+            color: $text-color;
+        }
 
     .container{
 
+        width: $width;
+        padding: 0 4rem;
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
         .left{
-            height: $box-height;
-            width: $box-width;
+            position: relative;
+            height: calc(($height) * 0.7);
+            width: calc(($width) * 0.4);
+            // border: 0.02rem solid $main-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .box{
+                height: calc(($box-height) * 0.7);
+                width: calc(($box-width) * 0.7);
+                background: $main-color;
+                position: absolute;
+
+            }
+            .one{
+                top: 0;
+                right: 0;
+            }
+            .two{
+                bottom: 0;
+                left: 0;
+            }
+
+            img{
+                height: calc(($height) * 0.638);
+                width: calc(($width) * 0.9);
+                object-fit: cover;
+                z-index: 11;
+            }
         }
+
+        .right{
+            width: calc(($width) * 0.5);
+
+            .obj{
+                display: flex;
+                // flex-direction: column;
+                align-items: flex-start;
+                margin: 2rem 0;
+                font-family: $font-family;
+                color: $text-color;
+                font-size: $text-size;
+
+                h3{
+                    color: $main-color;
+                    padding: 0 0 2rem 0;
+                }
+
+                img{
+                    width: $small-box-width;
+                    object-fit: contain;
+                }
+
+                .text{
+                    padding: 0 2rem;
+                }
+            }
+
+            .link{
+                text-align: center;
+
+                a{
+                    text-decoration: none;
+                    font-size: $text-size;
+                    padding: 0 1rem;
+                }
+                .start{
+                    padding: 0.5rem 0.7rem;
+                    background: $main-color;
+                    color: $primary-color;
+                    border-radius: $small-border-radius;
+                }
+                .more{
+                    color: $text-color;
+                }
+            }
+        }
+    }
+
+    .diamond{
+        height: $small-box-height;
+        width: $small-box-width;
+        background: $main-color;
+        position: absolute;
+        bottom: 0;
+        right: calc(($width) * 0.1);
+        transform: rotateZ(45deg);
     }
 }
