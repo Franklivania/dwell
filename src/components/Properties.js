@@ -81,8 +81,8 @@ const Properties = () => {
     }
 
   return (
-    <div>
-        <div className="container">
+    <div className='properties'>
+        <div className='container'>
             <div className="btn">
                 <button onClick={() => toggleDiv(0)}className={activeButton === 0 ? 'active' : ''}>For Rent</button>
                 <button onClick={() => toggleDiv(1)}className={activeButton === 1 ? 'active' : ''}>For Sale</button>

@@ -1,0 +1,23 @@
+@import '../App.scss';
+
+.companies{
+    position: relative;
+    height: $box-height;
+    width: $width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family;
+
+    .text{
+        color: $main-color;
+        margin: 13rem 0 0 0;
+        font-size: $text-size;
+        font-weight: 500;
+    }
+
+    img{
+        padding: 2rem;
+    }
+}

@@ -24,6 +24,19 @@ const Hero = () => {
         <div className="box"></div>
         <div className="circle"></div>
 
+        <div className="cont">
+          <div className="left">
+            <h1>25 &nbsp; <p><div>Years &nbsp; <i class="fa-solid fa-award fa-2x"></i></div><span> of QUALITY</span></p></h1>
+          </div>
+          <div className="right">
+            <p>
+              As a trusted realty company that has been
+              operating for 25 years, our commitment is
+              always to prioritize our client’s satisfaction.
+            </p>
+          </div>
+        </div>
+
         <Properties/>
         
     </main>

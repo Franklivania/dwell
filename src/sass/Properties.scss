@@ -1,97 +1,112 @@
 @import '../App.scss';
 
-.container{
-    width: calc(($width) * 0.8);
-    background: $primary-color;
-    height: calc(($height) * 0.2);
-    color: $text-color;
-    position: absolute;
-    top: calc(($height) * 0.94);
-    left: calc(($width) * 0.1);
-    border-radius: $border-radius;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0.03rem 0.3rem 0.5rem rgba(($text-color), 0.8),
-                -0.03rem -0.3rem 0.5rem rgba(($text-color), 0.8);
+.properties{
 
-    .content{
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        width: calc(($width) * 1);
-        height: calc(($height) * 0.2);
+    .container{
+        width: calc(($width) * 0.8);
         background: $primary-color;
-        border-radius: $border-radius;
-        padding: 1rem;
-        display: flex;
+        height: calc(($height) * 0.2);
         color: $text-color;
-
-        .place{
+        position: absolute;
+        top: calc(($height) * 0.94);
+        left: calc(($width) * 0.1);
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0.03rem 0.3rem 0.7rem rgba(($text-color), 0.4),
+        -0.03rem -0.3rem 0.7rem rgba(($text-color), 0.4);
+        
+        .content{
             position: absolute;
+            z-index: 2;
             top: 0;
             left: 0;
             width: calc(($width) * 1);
             height: calc(($height) * 0.2);
-            border-radius: $border-radius;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 1.3rem 0 0 0;
-            
-            .card{
-
-                div{
-                    cursor: pointer;
-                    padding: 0.3rem;
-                    height: $small-box-height;
-                    width: $box-width;
-                    background: $primary-color;
-                    padding: 0.4rem;
-                }
-
-                button{
-                    padding: 0.4rem 0;
-                    background: none;
-                    font-size: $text-size;
-                    color: $main-color;
-                    border: none;
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: flex-start;
-                }
-
-            }
-
-        }
-    }
-
-    .btn{
-        position: absolute;
-        top: calc(($height) * -0.04);
-        left: calc(($width) * 0.4);
-        display: flex;
-        justify-content: space-between;
-        width: calc(($width) * 0.2);
-        z-index: 1;
-
-        button{
-            height: $button-height;
-            width: $button-width;
             background: $primary-color;
+            border-radius: $border-radius;
+            padding: 1rem;
+            display: flex;
             color: $text-color;
-            outline: none;
-            border: none;
-            border-radius: $small-border-radius;
-
-            &.active{
-                color: $main-color;
-                border: $main-color solid 0.05rem;
+            
+            .place{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: calc(($width) * 1);
+                height: calc(($height) * 0.2);
+                border-radius: $border-radius;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1.3rem 0 0 0;
+                
+                .card{
+                    
+                    div{
+                        cursor: pointer;
+                        padding: 0.3rem;
+                        height: $small-box-height;
+                        width: $box-width;
+                        background: $primary-color;
+                        padding: 0.4rem;
+                    }
+                    
+                    button{
+                        padding: 0.4rem 0;
+                        background: none;
+                        font-size: $text-size;
+                        color: $main-color;
+                        border: none;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                    }
+                    
+                }
+                
+                label{
+                    button{
+                        padding: 0.6rem 2rem;
+                        background: $main-color;
+                        color: $primary-color;
+                        font-size: $text-size;
+                        border: none;
+                        border-radius: $small-border-radius;
+                        outline: none;
+                    }
+                }
+                
             }
-
-            &:hover{
-                color: $main-color;
-                border: $main-color solid 0.05rem;
+        }
+        
+        .btn{
+            position: absolute;
+            top: calc(($height) * -0.04);
+            left: calc(($width) * 0.4);
+            display: flex;
+            justify-content: space-between;
+            width: calc(($width) * 0.2);
+            z-index: 1;
+            
+            button{
+                height: $button-height;
+                width: $button-width;
+                background: $primary-color;
+                color: $text-color;
+                outline: none;
+                border: none;
+                border-radius: $small-border-radius;
+                
+                &.active{
+                    color: $main-color;
+                    border: $main-color solid 0.05rem;
+                }
+                
+                &:hover{
+                    color: $main-color;
+                    border: $main-color solid 0.05rem;
+                }
             }
         }
     }

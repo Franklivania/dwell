@@ -1,5 +1,7 @@
 import React from 'react'
+import Companies from '../components/Companies'
 import Hero from '../components/Hero'
+import Howto from '../components/Howto'
 import '../sass/Landing.scss'
 
 const Landing = () => {
@@ -7,6 +9,10 @@ const Landing = () => {
     <div className='landing'>
 
         <Hero/>
+
+        <Companies/>
+
+        <Howto/>
 
     </div>
   )

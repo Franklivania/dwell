@@ -1,0 +1,13 @@
+@import '../App.scss';
+
+.howto{
+    position: relative;
+
+    .container{
+
+        .left{
+            height: $box-height;
+            width: $box-width;
+        }
+    }
+}

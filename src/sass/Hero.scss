@@ -15,6 +15,7 @@ main{
     position: relative;
     font-size: $text-size;
     color: $primary-color;
+    font-family: $font-family;
 
     .text{
         width: calc(($width) * 0.4);
@@ -54,6 +55,60 @@ main{
         top: calc(($height) * 0.87);
         left: calc(($width) * 0.06);
         border-radius: $radius;
+    }
+
+    .cont{
+        position: absolute;
+        top: calc(($height) * 0.56);
+        left: calc(($width) * 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: linear-gradient(
+            135deg,
+            rgba(($main-color), 1),
+            rgba(($text-color), 1)
+        );
+        width: calc(($width) * 0.4);
+        padding: 1.5rem;
+
+        .left{
+            
+            h1{
+                color: $primary-color;
+                font-size: $extra-large-text;
+                display: flex;
+
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: $text-size;
+                    position: relative;
+
+                    div{
+                        display: flex;
+                        align-items: center;
+                        font-weight: 300;
+                        font-size: $small-text;
+                    }
+                    
+                    span{
+                        display: flex;
+                        // flex-direction: ;
+                    }
+                }
+            }
+        }
+
+        .right{
+
+            width: calc(($width) * 0.5);
+            p{
+                font-size: $small-text;
+            }
+        }
     }
 
 }
