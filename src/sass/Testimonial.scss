@@ -1,0 +1,115 @@
+@import '../App.scss';
+
+.testimonial{
+    width: $width;
+    padding: 2rem;
+    font-family: $font-family;
+    position: relative;
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: $width;
+        position: relative;
+
+        h1{
+            color: $main-color;
+        }
+        p{
+            color: $text-color;
+            font-size: $small-text;
+            padding: 1rem 0;
+        }
+    }
+
+    .bottom{
+        position: relative;
+        height: calc(($height) * 0.5);
+
+        .btn{
+            position: absolute;
+            width: $width;
+            height: $box-height;
+            // background: $main-color;
+
+            button{
+                padding: 0.3rem 0.5rem;
+                outline: none;
+                border: 0.02rem solid $main-color;
+                border-radius: $radius;
+                margin: 0 0.5rem;
+                background: $primary-color;
+                color: $main-color;
+                position: absolute;
+                top: calc(($box-height) * 0.43);
+
+                &:hover{
+                    color: $primary-color;
+                    background: $main-color;
+                }
+            }
+
+            #left{
+                left: calc(($width) * 0.09);
+            }
+            #right{
+                right: calc(($width) * 0.09);
+            }
+        }
+
+        .container{
+            width: $width;
+            display: flex;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+
+            .card{
+                height: $box-height;
+                width: calc(($box-width) * 1.3);
+                box-shadow: 0.03rem 0.03rem 0.3rem rgba(($text-color), 0.5),
+                            -0.03rem -0.03rem 0.3rem rgba(($text-color), 0.5);
+                border-radius: $small-border-radius;
+                margin: 0 1rem;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .text{
+                    display: flex;
+                    align-items: center;
+
+                    h4{
+                        margin: 0 1rem;
+
+                        p{
+                            font-size: $text-size;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+
+        .box{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: calc(($width) * 0.45);
+            padding: 2rem;
+
+            .indicator{
+                height: calc(($small-box-height) * 0.3);
+                width: calc(($small-box-width) * 0.3);
+                border-radius: $radius;
+                margin: 0 0.2rem;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ import Companies from '../components/Companies'
 import Display from '../components/Display'
 import Hero from '../components/Hero'
 import Howto from '../components/Howto'
+import Testimonial from '../components/Testimonial'
 import '../sass/Landing.scss'
 
 const Landing = () => {
@@ -19,6 +20,8 @@ const Landing = () => {
         <Brand/>
 
         <Display/>
+
+        <Testimonial/>
 
     </div>
   )

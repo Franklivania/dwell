@@ -35,3 +35,14 @@ $font-family: 'Montserrat', sans-serif;
 .App{
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar{
+  width: 0.3rem;
+  background: $primary-color;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: $border-radius;
+  background: $main-color;
+  padding: 0.3rem;
+}

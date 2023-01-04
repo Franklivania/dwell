@@ -131,7 +131,7 @@ const Display = () => {
                     <img src={image.src} alt={image.alt} />
                     <h4>{image.text}</h4>
                     <p>{image.place}</p>
-                    <h2>{image.priceg}</h2>
+                    <h2>{image.price}</h2>
                 </div>
                 ))}
             </div>
