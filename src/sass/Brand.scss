@@ -12,7 +12,7 @@
         align-items: center;
         justify-content: space-between;
         width: $width;
-        padding: 0 2rem;
+        padding: 2rem;
 
         h1{
             font-size: $extra-large-text;
@@ -26,7 +26,7 @@
 
             hr{
                 margin: 2rem 0 0 0;
-                width: calc(($box-width) * 1);
+                width: calc(($box-width) * 1.4);
                 background: $main-color;
                 height: calc(($small-box-height) * 0.1);
                 border: none;
@@ -40,7 +40,55 @@
         }
 
         .circle{
-            
+            height: $small-box-height;
+            width: $small-box-width;
+            background: $accent-color;
+            position: absolute;
+            top: 0;
+            left: calc(($width) * 0.5);
+            border-radius: $radius;
+        }
+    }
+
+    .bottom{
+        width: $width;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 4rem;
+        place-items: center;
+
+        .card{
+            height: calc(($box-height) * 0.4);
+            width: calc(($box-width) * 1.2);
+            margin: 4rem 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .text{
+                padding: 0 0 0 2rem;
+                display: grid;
+                gap: 2rem;
+
+                h3{
+                    color: $main-color;
+                }
+
+                p{
+                    color: $text-color;
+                    font-size: $small-text;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $text-color;
+
+                    &:hover{
+                        color: $main-color;
+                    }
+                }
+            }
         }
     }
 }
