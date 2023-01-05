@@ -18,9 +18,12 @@ main{
     font-family: $font-family;
 
     .text{
-        width: calc(($width) * 0.4);
-        height: calc(($height) * 0.5);
-        margin: 5rem;
+        width: calc(($width) * 0.5);
+        height: calc(($height) * 0.4);
+        position: absolute;
+        top: calc(($height) * 0.27);
+        left: calc(($width) * 0.04);
+
 
         h1{
             font-size: $extra-large-text;
@@ -61,7 +64,7 @@ main{
     .cont{
         position: absolute;
         top: calc(($height) * 0.56);
-        left: calc(($width) * 0.5);
+        left: calc(($width) * 0.56);
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -79,6 +82,7 @@ main{
                 color: $primary-color;
                 font-size: $extra-large-text;
                 display: flex;
+                align-items: center;
 
                 p{
                     display: flex;

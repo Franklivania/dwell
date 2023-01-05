@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import '../sass/Properties.scss'
 
+
 const Properties = () => {
     const [activeDiv, setActiveDiv] = useState(0);
     const [activeButton, setActiveButton] = useState(0);
@@ -99,7 +100,7 @@ const Properties = () => {
                                     <ItemList 
                                     items={items.filter(i => i !== activeItem)} 
                                     handleClick={handleClick} 
-                                    activeItem={activeItem} 
+                                    activeItem={activeItem}
                                     />
                                     )}
                                 {activeItem && (

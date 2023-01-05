@@ -3,6 +3,7 @@ import Banner from '../components/Banner'
 import Brand from '../components/Brand'
 import Companies from '../components/Companies'
 import Display from '../components/Display'
+import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Howto from '../components/Howto'
 import Testimonial from '../components/Testimonial'
@@ -12,19 +13,21 @@ const Landing = () => {
   return (
     <div className='landing'>
 
-        <Hero/>
+      <Hero/>
 
-        <Companies/>
+      <Companies/>
 
-        <Howto/>
+      <Howto/>
 
-        <Brand/>
+      <Brand/>
 
-        <Display/>
+      <Display/>
 
-        <Testimonial/>
+      <Testimonial/>
 
-        <Banner/>
+      <Banner/>
+
+      <Footer/>
 
     </div>
   )

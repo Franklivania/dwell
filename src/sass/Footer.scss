@@ -1,5 +1,82 @@
 @import '../App.scss';
 
 footer{
+    width: $width;
+    background: $footer-color;
+    padding: 2rem;
+    color: $primary-color;
+    font-family: $font-family;
+    font-size: $text-size;
+    position: relative;
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        width: $width;
+        height: calc(($box-height) * 1.2);
+
+        .left{
+            height: $box-height;
+            width: calc(($box-width) * 1.5);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .right{
+            display: flex;
+            justify-content: space-between;
+            width: calc(($box-width) * 2);
+            // background: $main-color;
+            z-index: 99;
+
+            .company, .support{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+
+                a{
+                    text-decoration: none;
+                    color: $primary-color;
+
+                    &:hover{
+                        color: $main-color;
+                    }
+                }
+            }
+        }
     
+    }
+
+    .foot{
+        position: relative;
+        width: calc(($width) * 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+
+        .social{
+            display: flex;
+            align-items: center;
+
+            a{
+                color: $primary-color;
+                padding: 0 0.3rem;
+
+                &:hover{
+                    color: $main-color;
+                }
+            }
+        }
+    }
+
+    .footimg{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
 }

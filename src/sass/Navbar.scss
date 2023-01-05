@@ -8,6 +8,8 @@
     padding: 0.5rem 0;
     position: relative;
     font-family: $font-family;
+    top: 0;
+    z-index: 999;
 
     img{
         width: calc(($width) * 0.1);
