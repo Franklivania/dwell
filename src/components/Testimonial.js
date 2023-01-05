@@ -20,14 +20,14 @@ const slides = [
                 text: ' “Whenever I have needed housing services, I have come to these people, and they have always delivered.” ',
                 src: two,
                 name: 'George James',
-                company: 'MD, LaFarge.'
+                company: 'MD, Dangote.'
             },
             {
                 id: '3',
                 text: ' “We like the final result this project, in extraordinary and also provides the best service to the client” ',
                 src: three,
                 name: 'George James',
-                company: 'MD, LaFarge.'
+                company: 'MD, Julius Berger.'
             }
         ]
     },
@@ -39,14 +39,14 @@ const slides = [
                 text: ' “We like the final result this project, in extraordinary and also provides the best service to the client 1” ',
                 src: one,
                 name: 'George James',
-                company: 'MD, LaFarge.'
+                company: 'MD, AMEN.'
             },
             {
                 id: '2',
                 text: ' “Whenever I have needed housing services, I have come to these people, and they have always delivered. 1” ',
                 src: two,
                 name: 'George James',
-                company: 'MD, LaFarge.'
+                company: 'MD, Nigerian Commision.'
             },
             {
                 id: '3',
@@ -65,14 +65,14 @@ const slides = [
                 text: ' “We like the final result this project, in extraordinary and also provides the best service to the client 2” ',
                 src: one,
                 name: 'George James',
-                company: 'MD, LaFarge.'
+                company: 'MD, Julius Berger.'
             },
             {
                 id: '2',
                 text: ' “Whenever I have needed housing services, I have come to these people, and they have always delivered. 2” ',
                 src: two,
                 name: 'George James',
-                company: 'MD, LaFarge.'
+                company: 'MD, Amen.'
             },
             {
                 id: '3',

@@ -1,4 +1,5 @@
 import React from 'react'
+import Banner from '../components/Banner'
 import Brand from '../components/Brand'
 import Companies from '../components/Companies'
 import Display from '../components/Display'
@@ -22,6 +23,8 @@ const Landing = () => {
         <Display/>
 
         <Testimonial/>
+
+        <Banner/>
 
     </div>
   )
