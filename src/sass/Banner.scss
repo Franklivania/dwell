@@ -40,6 +40,11 @@
                 text-decoration: none;
                 border-radius: $small-border-radius;
                 margin: 0 1rem;
+                transition: transform 0.5s ease-in-out;
+
+                &:hover{
+                    transform: scale(1.2);
+                }
             }
             .homes{
                 background: $main-color;
@@ -50,4 +55,21 @@
         }
     }
 
+}
+
+@media screen and (min-width: 1024px){
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .banner{
+        height: calc(($height) * 0.4);
+
+        .text{
+            width: calc(($width) * 0.7);
+            height: calc(($height) * 0.4);
+        }
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  
 }

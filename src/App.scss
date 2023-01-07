@@ -35,6 +35,7 @@ $font-family: 'Montserrat', sans-serif;
 
 .App{
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 ::-webkit-scrollbar{
@@ -46,4 +47,15 @@ $font-family: 'Montserrat', sans-serif;
   border-radius: $border-radius;
   background: $main-color;
   padding: 0.3rem;
+}
+
+
+@media screen and (min-width: 1024px){
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+}
+@media screen and (min-width: 200px) and (max-width: 767px) {
+
 }

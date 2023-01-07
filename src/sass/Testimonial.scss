@@ -113,3 +113,43 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px){
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .testimonial{
+
+        .bottom{
+            height: calc(($height) * 0.4);
+
+            .btn{
+                top: calc(($box-height) * 0.14);
+
+                #left{
+                    left: calc(($width) * -0.03);
+                }
+
+                #right{
+                    right: calc(($width) * -0.03);
+                }
+            }
+
+            .container{
+
+                .card{
+                    height: calc(($box-height) * 1.3);
+                    width: calc(($box-width) * 1);
+                    margin: 0 0.5rem;
+                }
+
+            }
+            .box{
+                left: calc(($width) * 0.4);
+            }
+        }
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  
+}

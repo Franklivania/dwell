@@ -128,3 +128,28 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px){
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .display{
+
+        .bottom{
+            height: calc(($height) * 0.5);
+
+            .container{
+
+                .card{
+
+                    img{
+                        width: calc(($box-width) * 0.95);
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  
+}

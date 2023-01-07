@@ -126,3 +126,19 @@
     color: $text-color;
     top: calc(($height) * 0.12);
 }
+
+@media screen and (min-width: 1024px){
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .properties{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .properties{
+        display: none;
+    }
+}
