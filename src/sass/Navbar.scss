@@ -174,5 +174,30 @@
     
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
-  
+    .navbar{
+        justify-content: space-between;
+        padding: 1rem;
+
+        img{
+            width: calc(($width) * 0.3);
+        }
+
+        .nav{
+            display: none;
+        }
+
+        .mobilemenu{
+            .menu{
+
+                nav{
+                    display: flex;
+                    flex-direction: column;
+
+                    .link{
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
 }

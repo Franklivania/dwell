@@ -151,5 +151,36 @@
     }
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
-  
+    .testimonial{
+        position: relative;
+        margin: 40rem 0 0 0;
+
+        .bottom{
+
+            .btn{
+                top: calc(($height) * 0.32);
+
+                #left{
+                    left: calc(($width) * -0.05);
+                }
+
+                #right{
+                    right: calc(($width) * -0.05);
+                }
+            }
+
+            .container{
+                display: block;
+                padding: 0;
+
+                .card{
+                    margin: 0.5rem;
+                }
+            }
+            .box{
+                top: calc(($height) * 0.9);
+                left: calc(($width) * 0.34);
+            }
+        }
+    }
 }

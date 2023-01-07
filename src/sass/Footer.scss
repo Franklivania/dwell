@@ -88,5 +88,35 @@ footer{
     
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
-  
+    footer{
+        height: calc(($height) * 0.9);
+
+        .container{
+            display: flex;
+            flex-direction: column;
+
+            .left{
+                margin: 15rem 0 0 0;
+            }
+
+            .right{
+                display: flex;
+                flex-direction: column;
+                margin: 5rem 0 0 0;
+                
+                div{
+                    padding: 0.5rem 0;
+                }
+            }
+        }
+
+        hr{
+            margin: 18rem 0 0 0;
+        }
+
+        .foot{
+            width: $width;
+            z-index: 1;
+        }
+    }
 }

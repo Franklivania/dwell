@@ -151,5 +151,50 @@
     }
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
-  
+    .display{
+        position: relative;
+        .top{
+            width: $width;
+            padding: 1rem;
+
+            h1, p   {
+                width: $width;
+
+                a{
+                    width: calc(($box-width) * 0.5);
+                    text-align: center;
+                }
+            }
+        }
+
+        .bottom{
+
+            .container{
+                // position: relative;
+                width: $width;
+                height: $height;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+
+                .card{
+                    margin: 1rem 0;
+                    width: $width;
+
+                    h4{
+                        width: calc(($width) * 0.7);
+                    }
+                }
+            }
+
+            .btn{
+                top: calc(($height) * 1.35);
+            }
+
+            .box{
+                top: calc(($height) * 1.37);
+            }
+        }
+    }
 }

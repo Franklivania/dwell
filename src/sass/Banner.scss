@@ -71,5 +71,12 @@
     }
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
-  
+    .banner{
+        padding: 1rem;
+        margin: 25rem 0 0 0;
+
+        .text{
+            width: $width;
+        }
+    }
 }

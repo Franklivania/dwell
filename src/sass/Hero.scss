@@ -5,8 +5,8 @@ main{
     background: 
         radial-gradient(
             circle,
+            rgba(($text-color), 0.6),
             rgba(($text-color), 0.4),
-            rgba(($text-color), 0.2),
         ),
     url(../assets/hero.jpg) no-repeat center;
     background-size: cover;
@@ -138,5 +138,32 @@ main{
     
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
-  
+    main{
+
+        .text{
+            width: $width;
+            top: calc(($height) * 0.1);
+        }
+
+        .box{
+            left: calc(($width) * 0.7);
+        }
+        .circle{
+            top: calc(($height) * 0.95);
+        }
+
+        .cont{
+            width: $width;
+            top: calc(($height) * 0.7);
+            left: 0;
+
+            .left{
+
+                h1{
+                    display: flex;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
 }
