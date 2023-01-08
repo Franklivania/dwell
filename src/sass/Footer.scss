@@ -89,7 +89,7 @@ footer{
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
     footer{
-        height: calc(($height) * 0.9);
+        height: calc(($height) * 1.2);
 
         .container{
             display: flex;

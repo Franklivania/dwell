@@ -139,6 +139,7 @@ main{
 }
 @media screen and (min-width: 200px) and (max-width: 767px) {
     main{
+        height: calc(($height) * 1.2);
 
         .text{
             width: $width;
@@ -149,12 +150,12 @@ main{
             left: calc(($width) * 0.7);
         }
         .circle{
-            top: calc(($height) * 0.95);
+            top: calc(($height) * 1.1);
         }
 
         .cont{
             width: $width;
-            top: calc(($height) * 0.7);
+            top: calc(($height) * 0.8);
             left: 0;
 
             .left{

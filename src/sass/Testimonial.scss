@@ -153,7 +153,7 @@
 @media screen and (min-width: 200px) and (max-width: 767px) {
     .testimonial{
         position: relative;
-        margin: 40rem 0 0 0;
+        margin: 48rem 0 0 0;
 
         .bottom{
 
@@ -172,8 +172,10 @@
             .container{
                 display: block;
                 padding: 0;
+                margin: 0 0 0 0.6rem;
 
                 .card{
+                    width: calc(($box-width) * 1.1);
                     margin: 0.5rem;
                 }
             }
